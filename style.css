@@ -1,0 +1,128 @@
+*{
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
+    
+}
+body{
+    background: linear-gradient(tomato,aqua);
+    font-family: 'Kumbh Sans', sans-serif;
+}
+header {
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+h1{
+    color:rgba(0, 0, 0, 0.719);
+    position: absolute;
+    top:4rem;
+    font-size: 3rem;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     padding: 10rem;
+}
+#txt{
+font-size:2rem;
+padding: 0.5rem;
+border-radius: 0.5rem;
+border:1px solid rgba(0, 0, 0, 0.369);
+}
+#square{
+    padding: 2px;
+    font-size: 3rem;
+    color: tomato;
+    cursor: pointer;
+}
+#square:hover{
+    color:rgb(0, 255, 42);
+}
+.container{
+    position: absolute;
+    /* overflow:scroll; */
+   top:40%;
+   left:20%;
+    width:60%;
+    height:60%;
+    background: rgba(0, 0, 0, 0.143);
+    border-radius: .5rem;
+   
+
+}
+ul{
+    position: absolute;
+    font-family: 'Patrick Hand', cursive;
+    font-weight: 600;
+    top:5%;
+    left:40%;
+    font-size: 1.5rem;
+    color:rgba(0, 0, 0, 0.924);
+}
+li{
+    list-style-type: none;
+    background-color: rgba(255, 255, 255, 0.486);
+    margin:.5rem;
+    padding: .2rem;
+    
+}
+.delete-but{
+    margin: .5rem;
+   color:tomato;
+    font-size: 1.3rem;
+    cursor: pointer;
+    text-decoration: none;
+    border:0px solid transparent;
+
+}
+.complete-but{
+    margin: .5rem;
+    color:lime;
+    border:0px solid transparent;
+    font-size: 1.3rem;
+    cursor: pointer;
+
+}
+.fa-trash,.fa-check{
+    pointer-events: none;
+}
+.comp{
+    color:rgba(0, 0, 0, 0.164);
+}
+
+@media (max-width:768px){
+    #txt{
+        font-size:1.5rem;
+        padding: 0.2rem;
+        border-radius: 0.5rem;
+        border:1px solid rgba(0, 0, 0, 0.369);
+        }
+        .container{
+            
+           top:37%;
+           left:13%;
+            width:70%;
+            height:60%;
+            }
+            ul{
+                
+                top:5%;
+                left:15%;
+               
+            }
+}
+@media (min-width:968px to 1000px){
+    .container{
+        top:20%;
+    }
+    ul{
+        left:13%;
+    }
+}
+.todoanim{
+    transform:translateY(8rem) rotatez(20deg);
+    opacity:0;
+    transition: all linear 0.5s;
+}
